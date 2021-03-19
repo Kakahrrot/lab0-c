@@ -603,7 +603,6 @@ bool finish_cmd()
     if (!quit_flag)
         ok = ok && do_quit_cmd(0, NULL);
     has_infile = false;
-    linenoiseAtExit();
     return ok && err_cnt == 0;
 }
 
